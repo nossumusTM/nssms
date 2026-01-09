@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-sans: "Sora", "Inter", system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: #07070b;
+  color: #f7f7fb;
+}
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 20px rgba(109, 124, 255, 0.45);
+  }
+
+  .glass {
+    @apply bg-white/5 backdrop-blur-ultra border border-white/10;
+  }
+}
